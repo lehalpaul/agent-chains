@@ -107,7 +107,7 @@ def run_conversation(question):
   memory = ConversationBufferMemory(memory_key= "chat_history",return_messages=True)
   conversation = LLMChain(llm=llm,prompt=prompt_temp,verbose=False,memory=memory)
 
-  loader = CSVLoader(file_path="/content/cronicchevrolet.csv")
+  loader = CSVLoader(file_path="cronicchevrolet.csv")
   data = loader.load()
   vectordb = Chroma.from_documents(data, OpenAIEmbeddings())
   retriever = vectordb.as_retriever()
