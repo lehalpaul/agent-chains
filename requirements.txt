@@ -2,5 +2,5 @@ langchain
 openai
 streamlit
 langchain-community
-faiss-cpu
+chromadb
 tiktoken
