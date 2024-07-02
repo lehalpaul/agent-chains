@@ -161,6 +161,7 @@ def run_conversation(question):
       verbose=False,
       max_iterations=3,
       memory=memory,
+      handle_parsing_errors=True 
   )
   response =agent.run(question)
 
