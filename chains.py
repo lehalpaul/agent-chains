@@ -13,7 +13,7 @@ from langchain.agents import AgentType
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import LLMChain
 from langchain.document_loaders import CSVLoader
-from langchain.vectorstores import Chroma
+from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
 
@@ -109,7 +109,7 @@ def run_conversation(question):
 
   loader = CSVLoader(file_path="cronicchevrolet.csv")
   data = loader.load()
-  vectordb = Chroma.from_documents(data, OpenAIEmbeddings())
+  vectordb = FAISS.from_documents(data, OpenAIEmbeddings())
   retriever = vectordb.as_retriever()
 
   temp = """
