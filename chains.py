@@ -19,7 +19,7 @@ from langchain.chains import RetrievalQA
 
 
 import os
-
+import openai
 def main():
     
     openai.api_key=os.environ["OPENAI_API_KEY"]
