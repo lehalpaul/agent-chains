@@ -149,10 +149,11 @@ def run_conversation(question):
           func = conversation.run,
           description = """
           Useful for when you need to answer questions ,when user ask comments to generate script .Any question related to Kia Telluride will be answered by this Tool.
+          All answer should be in script format check template.
           <user>: Provide me script for Kia Telluride 2022
           <assistant>: check template
           <user>: What is the asking price for the 2022 Kia Telluride?
-          <assistant> check template 
+          <assistant> check template and always generate in script format
 
           """,
       ),
