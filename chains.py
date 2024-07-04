@@ -149,13 +149,8 @@ def run_conversation(question):
           func = conversation.run,
           description = """
           Useful for when you need to answer questions ,when user ask comments to generate script .Any question related to Kia Telluride will be answered by this Tool.
-         Create a script with the following sections:
-      - Greeting
-      - Introduction (Incorporate vehicles of interest and relevant customer comments)
-      - Returning Customer Acknowledgement (if applicable)
-      - Questions to Understand Lead’s Needs
-      - Closing Statement (Include scheduling for a follow-up appointment or test drive)
-  Ensure all scripts are formatted with clear labels for each section.
+         <user> What will be the Price for Kia Telluride
+         <assistant> Check template and generate script involving answer 
           """,
       ),
 
