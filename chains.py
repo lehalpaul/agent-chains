@@ -152,9 +152,7 @@ def run_conversation(question):
           All answer should be in script format check template.
           <user>: Provide me script for Kia Telluride 2022
           <assistant>: check template
-          <user>: What is the asking price for the 2022 Kia Telluride?
-          <assistant> check template and always generate in script format
-
+        
           """,
       ),
 
