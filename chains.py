@@ -177,7 +177,7 @@ def run_conversation(question):
       tools=tools,
       llm=llm,
       verbose=False,
-      max_iterations=3,
+      max_iterations=10,
       memory=memory,
       handle_parsing_errors=True 
   )
