@@ -147,9 +147,12 @@ def run_conversation(question):
         name = "Script Generation",
         func = conversation.run,
         description = """
-        Useful for when you need to answer questions about Kia Telluride ,and provide script in response.Check template for information and always have to generate script.
-          <user>: Provide me script for Kia Telluride 2022
-          <assistant>: check template
+
+        Useful for when you need to answer questions about Kia Telluride  ,when user ask comments to generate script .
+        <user>: Provide me script for Kia Telluride 2022
+        <assistant>: check template
+
+        
         
         
         """,
