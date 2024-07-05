@@ -149,6 +149,7 @@ def run_conversation(question):
         description = """
 
         Useful for when you need to answer questions about Kia Telluride  ,when user ask comments to generate script .
+        Need to answer question about Kia Telluride 2022 and extract information from prompt template . always generate script for Kia Telluride.
         <user>: Provide me script for Kia Telluride 2022
         <assistant>: check template
 
