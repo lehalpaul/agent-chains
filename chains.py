@@ -23,7 +23,7 @@ import openai
 def main():
     
     openai.api_key=os.environ["OPENAI_API_KEY"]
-    st.title("Auto Dealership AI Assistant")
+    st.title("Agent Assistant")
 
    
     if "messages" not in st.session_state:
