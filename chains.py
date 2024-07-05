@@ -147,11 +147,7 @@ def run_conversation(question):
         Tool.from_function(
           name = "Script Generation",
           func = conversation.run,
-          description = """
-          Useful for when you need to answer questions ,when user ask comments to generate script .Any question related to Kia Telluride will be answered by this Tool.
-         <user> What will be the Price for Kia Telluride
-         <assistant> Check template and generate script involving answer 
-          """,
+          description = template,
       ),
 
       Tool.from_function(
