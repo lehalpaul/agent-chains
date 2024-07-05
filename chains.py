@@ -142,8 +142,7 @@ def run_conversation(question):
       | llm
       | StrOutputParser()
   )
-
- tools = [
+tools = [
       Tool.from_function(
         name = "Script Generation",
         func = conversation.run,
@@ -164,7 +163,9 @@ def run_conversation(question):
      <assistant>: Answer based on prompt for  csv .
     """
     ),
-  ]
+
+
+]
 
   memory = ConversationBufferMemory(memory_key="chat_history")
   agent = initialize_agent(
