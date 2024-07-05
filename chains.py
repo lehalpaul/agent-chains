@@ -142,7 +142,7 @@ def run_conversation(question):
       | llm
       | StrOutputParser()
   )
-tools = [
+  tools = [
       Tool.from_function(
         name = "Script Generation",
         func = conversation.run,
