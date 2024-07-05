@@ -164,11 +164,6 @@ def run_conversation(question):
      <assistant>: Answer based on prompt for  csv .
     """
     ),
-
-
-
-
-
   ]
 
   memory = ConversationBufferMemory(memory_key="chat_history")
