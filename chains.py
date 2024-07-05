@@ -150,6 +150,7 @@ def run_conversation(question):
 
         Useful for when you need to answer questions about Kia Telluride  ,when user ask comments then Generate script based on template.
         Need to answer question about Kia Telluride 2022 .
+        
         <user>: Provide me script for Kia Telluride 2022
         <assistant>: check template
 
