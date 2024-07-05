@@ -143,26 +143,30 @@ def run_conversation(question):
       | StrOutputParser()
   )
 
-  tools = [
-        Tool.from_function(
-          name = "Script Generation",
-          func = conversation.run,
-          description = """
-          Useful for when you need to answer questions ,when user ask comments to generate script .Any question related to Kia Telluride will be answered by this Tool.
-         <user> What will be the Price for Kia Telluride
-         <assistant> Check template and generate script involving answer 
-          """,
-      ),
-
+ tools = [
       Tool.from_function(
-      name="Inventory",
-    func=rag_chain.invoke,
-      description="""
-      Useful for when you need to answer questions about car data from inventory.
-      <user>:What is the MSRP and current dealership price for the 2024 GMC Sierra 1500 Denali Ultimate?
-      <assistant>: Answer based on prompt for  csv .
-      """
-      ),
+        name = "Script Generation",
+        func = conversation.run,
+        description = """
+        Useful for when you need to answer questions ,when user ask comments to generate script .
+        <user>: Provide me script for Kia Telluride 2022
+        <assistant>: check template
+
+        """,
+    ),
+
+    Tool.from_function(
+    name="Inventory",
+   func=rag_chain.invoke,
+    description="""
+     Useful for when you need to answer questions about car data from inventory.
+     <user>:What is the MSRP and current dealership price for the 2024 GMC Sierra 1500 Denali Ultimate?
+     <assistant>: Answer based on prompt for  csv .
+    """
+    ),
+
+
+
 
 
   ]
