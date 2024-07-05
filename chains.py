@@ -150,7 +150,7 @@ def run_conversation(question):
           description = """
           Useful for when you need to answer questions ,when user ask comments to generate script .Any question related to Kia Telluride will be answered by this Tool.
          <user> What will be the Price for Kia Telluride
-         <assistant> Check {template} and generate script involving answer 
+         <assistant> Check template and generate script involving answer 
           """,
       ),
 
