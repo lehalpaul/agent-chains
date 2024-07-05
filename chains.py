@@ -152,7 +152,8 @@ def run_conversation(question):
         <user>: Provide me script for Kia Telluride 2022
         <assistant>: check template
 
-        
+        <user>: What would be the price for Kia Telluride 2022
+        <assistant> check template
         
         
         """,
