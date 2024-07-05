@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+ from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
 
@@ -148,7 +148,7 @@ def run_conversation(question):
         func = conversation.run,
         description = """
 
-        Useful for when you need to answer questions about Kia Telluride  ,when user ask comments to Generate script .
+        Useful for when you need to answer questions about Kia Telluride  ,when user ask comments then Generate script based on template.
         Need to answer question about Kia Telluride 2022 .
         <user>: Provide me script for Kia Telluride 2022
         <assistant>: check template
