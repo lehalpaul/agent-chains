@@ -89,7 +89,7 @@ def run_conversation(question):
   Returning Customer: False
   Lead Type: Sales
 
-  Comments: {question}
+  Comments: {comments}
 
   Instructions:
   Create a script with the following sections:
@@ -147,7 +147,11 @@ def run_conversation(question):
         Tool.from_function(
           name = "Script Generation",
           func = conversation.run,
-          description = template,
+          description = """
+          Useful for when you need to answer questions ,when user ask comments to generate script .Any question related to Kia Telluride will be answered by this Tool.
+         <user> What will be the Price for Kia Telluride
+         <assistant> Check {template} and generate script involving answer 
+          """,
       ),
 
       Tool.from_function(
