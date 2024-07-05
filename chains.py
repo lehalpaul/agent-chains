@@ -89,7 +89,7 @@ def run_conversation(question):
   Returning Customer: False
   Lead Type: Sales
 
-  Comments: {comments}
+  Comments: {question}
 
   Instructions:
   Create a script with the following sections:
